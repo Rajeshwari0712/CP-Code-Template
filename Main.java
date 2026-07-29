@@ -64,8 +64,45 @@ public class Main {
     }
 
     static FastScanner fs = new FastScanner();
+    // =====================================================
+// FAST OUTPUT
+// =====================================================
+
+static class FastWriter {
+
+    private final PrintWriter out;
+
+    FastWriter() {
+        out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+    }
+
+    void print(Object obj) {
+        out.print(obj);
+    }
+
+    void println(Object obj) {
+        out.println(obj);
+    }
+
+    void println() {
+        out.println();
+    }
+
+    void printf(String format, Object... args) {
+        out.printf(format, args);
+    }
+
+    void flush() {
+        out.flush();
+    }
+
+    void close() {
+        out.close();
+    }
+}
+    static FastWriter out = new FastWriter();
 
     public static void main(String[] args) throws Exception {
-
+         out.flush();
     }
 }
